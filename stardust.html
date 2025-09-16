@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Stardust Website — Project</title>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/main.css"/>
+  <link rel="stylesheet" href="css/project page.css"/>
+</head>
+<body class="page-project">
+
+  <header class="hud pixel-frame">
+    <div class="hud-left">
+      <span class="brand">Lu-vienna.dev</span>
+      <div class="stats"><span class="chip">LV 03</span></div>
+    </div>
+    <nav class="hud-nav">
+      <a href="home.html">Home</a>
+      <a href="about-me.html">About</a>
+      <a href="experience.html">School & Work</a>
+      <a href="projects.html" class="active">Projects</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+<section class="project-detail-wrapper">
+    <button id="closeBtn" class="btn close-btn" style="background-color: rgb(87, 6, 6);">✖ Close</button>
+
+    <section class="project-detail">
+      <!-- Left: video(s) -->
+      <div class="project-col image" style="border-color: rgb(87, 6, 6);">
+        <div class="project-col image" style="border-color: rgb(87, 6, 6);">
+        <video 
+          src="portfolio images/stardust screenrecord.mp4" 
+          autoplay 
+          muted 
+          loop 
+          playsinline>
+        </video>
+
+        <img style="margin-bottom: 168px;"
+          src="portfolio images/Projects Moodboards/stardust website moodboard.png" 
+          alt="Moodboard" 
+          class="extra-img">
+        </div>
+      </div>
+
+  <!-- Right: all text together -->
+  <div class="project-col text" style="border-color: rgb(87, 6, 6);">
+        <div class="project-col text" style="border-color: rgb(87, 6, 6);">
+    <h2 style="color: burlywood;">Stardust Website</h2>
+
+    <p>
+      Stardust: A Digital Experience for a Whimsical Literary Café
+      Stardust is a full-featured website I built based on a creative brief for a fictional literary café and bookshop. 
+      The project's primary goal was to capture the unique atmosphere of the physical store—a blend of a whimsical, 
+      vintage bookshop and a cozy coffee house—and translate it into an immersive online experience.
+    </p>
+
+    <h3 style="color: burlywood;">What I Learned</h3>
+    <p>
+      This project was a fantastic opportunity to focus on user experience (UX) and creative design. 
+      I designed and developed the entire website, making sure to align every visual element with the brand's magical and elegant tone. 
+      I paid special attention to creating a captivating homepage with a video hero section and intuitive navigation. 
+      The site features a visually appealing menu gallery, a searchable book catalog, and a comprehensive events calendar.
+
+      My work on Stardust allowed me to hone my skills in translating a brand's essence into a functional and beautiful website. 
+      It taught me the importance of a cohesive design language and the power of storytelling to create a truly memorable digital experience.
+    </p>
+
+    <h3 style="color: burlywood;">Tech Stack</h3>
+    <ul>
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>JavaScript</li>
+    </ul>
+
+    <h3 style="color: burlywood;">The Creative Process</h3>
+    <p>
+      I studied the brand’s palette and logo, then used warm tones, subtle animations, 
+      and elegant typography to create a digital space that feels timeless and enchanting.
+    </p>
+
+    <div class="project-links" >
+      <a class="btn secondary"style="color: rgb(230, 196, 151); font-size: 25px;" href="https://github.com/Luvienna/Stardust-Website" target="_blank"> View Code</a>
+    </div>
+  </div>
+</section>
+
+<script>
+  document.getElementById("closeBtn").addEventListener("click", function() {
+    // Save the target scene in localStorage
+    localStorage.setItem("returnToScene", "scene-7");
+    // Go back to projects.html (no hash!)
+    window.location.href = "projects.html";
+  });
+</script>
+
+
+</body>
+</html>

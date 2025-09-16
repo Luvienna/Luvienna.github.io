@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Shine Website — Project</title>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/main.css"/>
+  <link rel="stylesheet" href="css/project page.css"/>
+</head>
+<body class="page-project">
+
+  <header class="hud pixel-frame">
+    <div class="hud-left">
+      <span class="brand">Lu-vienna.dev</span>
+      <div class="stats"><span class="chip">LV 03</span></div>
+    </div>
+    <nav class="hud-nav">
+      <a href="home.html">Home</a>
+      <a href="about-me.html">About</a>
+      <a href="experience.html">School & Work</a>
+      <a href="projects.html" class="active">Projects</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <section class="project-detail-wrapper">
+    <button id="closeBtn" class="btn close-btn">✖ Close</button>
+
+    <section class="project-detail">
+      <!-- Left: video(s) -->
+      <div class="project-col image" style="border-color: rgb(3, 42, 3);">
+        <div class="project-col image" style="border-color: rgb(3, 42, 3);">
+        <video 
+          src="portfolio images/shine screenrecord.mp4" 
+          autoplay 
+          muted 
+          loop 
+          playsinline>
+        </video>
+
+        <img style="margin-top: -100px; margin-bottom: -5px;"
+          src="portfolio images/Projects Moodboards/shine website moodboard.png" 
+          alt="Moodboard" 
+          class="extra-img">
+      </div>
+      </div>
+
+      <!-- Right: all text together -->
+      <div class="project-col text" style="border-color: rgb(3, 42, 3);">
+            <div class="project-col text" style="border-color: rgb(3, 42, 3);">
+        <h2 style="color: goldenrod;">Shine Website</h2>
+
+        <p>
+          Shine is my first major web development project, a fully-featured e-commerce 
+          website created for a unique and elegant jewelry brand. The goal was to build 
+          a site that not only showcases beautiful products but also embodies the 
+          brand's mission: to make every person who wears their jewelry feel special 
+          and “shine.”
+        </p>
+
+        <h3 style="color: goldenrod;">What I Learned</h3>
+        <p>
+          I sharpened my skills in front-end development, creative problem-solving, 
+          and translating a brand identity into a digital experience. From architecture 
+          to UX design, I focused on both elegance and usability.
+        </p>
+
+        <h3 style="color: goldenrod;">Tech Stack</h3>
+        <ul>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JavaScript</li>
+        </ul>
+
+        <h3 style="color: goldenrod;">The Creative Process</h3>
+        <p>
+          As a visual person, my process always starts with a mood board. I find that putting together images, colors, and textures helps me translate a brand's essence into a tangible design. For "Shine," the mood board was key to capturing the desired feeling of quiet elegance and unique sparkle, which I then carried through to the website's design.
+        </p>
+
+        <div class="project-links" style="border-color: goldenrod; font-size: 25px;">
+          <a class="btn secondary" href="https://github.com/Luvienna/Shine-website" target="_blank">View Code</a>
+        </div>
+      </div>
+    </section>
+  </section>
+
+<script>
+  document.getElementById("closeBtn").addEventListener("click", function() {
+    // Save the target scene in localStorage
+    localStorage.setItem("returnToScene", "scene-7");
+    // Go back to projects.html (no hash!)
+    window.location.href = "projects.html";
+  });
+
+  const params = new URLSearchParams(location.search);
+if (params.get("from") === "shortcut") {
+  document.querySelector(".close-btn").addEventListener("click", e => {
+    e.preventDefault();
+    window.parent.postMessage({ action: "closeBook" }, "*");
+  });
+}
+
+</script>
+
+
+</body>
+</html>

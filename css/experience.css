@@ -1,0 +1,229 @@
+.char-box {
+  min-height: 580px;
+  border: 3px solid var(--border);
+  border-radius: 6px;
+  background: url('../portfolio images/ambient -- map.jpg') center/cover no-repeat;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  padding-bottom: 0px;  
+}
+
+.char-box.full img {
+  max-height: 100%;
+  image-rendering: pixelated;
+}
+
+
+#mainAvatar {
+  transform: translateX(-100px); /* adjust value as needed */
+}
+
+
+/* Dialogue */ 
+
+.dialog { 
+  margin-top: 20px; 
+  margin-bottom: 700px;
+  padding: 14px; 
+  border: 3px solid var(--border); 
+  background: #fff; 
+  position: relative; } 
+  
+.dialog .nameplate { 
+  position: absolute; 
+  top: -14px; 
+  left: 16px; 
+  padding: 6px 10px; 
+  background: var(--pink); 
+  border: 3px solid var(--border); 
+  font-family: "Press Start 2P", monospace; 
+  font-size: 12px; 
+}
+  
+.dialog p { 
+  min-height: 60px; 
+  font-size:22px; 
+  line-height:1.25; 
+  margin:6px 0 10px 
+} 
+
+
+#transition-overlay {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.8s ease; 
+}
+
+/* Map */
+.map-wrap {
+  margin: 10px;
+  padding: 16px;
+  text-align: center;
+  background: url('../portfolio images/ambient -- map 5.png') center/cover no-repeat;
+  position: relative;
+  height: 600px;
+  overflow: hidden;
+}
+
+.map-wrap.hidden {
+  display: none;
+}
+
+/* Buttons: same look as now */
+.map-btn {
+  position: absolute;
+  width: 70px;
+  height: 85px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  z-index: 5;
+}
+
+/* Locked = still visible, but not clickable */
+.map-btn.locked {
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+/* Paths */
+.map-paths {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 2;
+}
+
+.map-path {
+  stroke: var(--pink);
+  stroke-width: 6;
+  stroke-linecap: butt;            /* prevents cap overshoot on endpoints */
+  fill: none;
+  stroke-dasharray: 14 12;        /* dashed "staple" look */
+  stroke-dashoffset: 1000;        /* hidden until animated */
+  opacity: 0;
+  transition: opacity 0.35s ease;
+}
+
+.map-path.visible {
+  opacity: 1;
+  animation: drawPath 1.0s forwards ease-out;
+}
+
+@keyframes drawPath {
+  to { stroke-dashoffset: 0; }
+}
+
+
+/* Modal styling */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 9999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.6);
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+/* Modal content box */
+.modal-content {
+  background: #fff;
+  border-radius: 18px;
+  width: 500px;
+  max-width: 90%;
+  padding: 25px 30px;
+  box-shadow: 0 8px 30px rgba(0,0,0,0.2);
+  position: relative;
+  animation: fadeIn 0.3s ease;
+}
+
+.modal[style*="display:block"],
+.modal[style*="display: block"] {
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  margin: 0 auto;
+}
+
+/* Close button (already looks nice but a little hover effect) */
+.close { 
+  position: absolute; 
+  top: -12px; 
+  right: -12px; 
+  background: var(--pink); 
+  color: #fff; 
+  border-radius: 50%; 
+  width: 28px; 
+  height: 28px; 
+  line-height: 28px; 
+  font-size: 25px; 
+  font-weight: bold; 
+  cursor: pointer;
+  border: 3px solid var(--border); 
+  box-shadow: 3px 3px 0 var(--border); 
+  transition: transform 0.1s; 
+}
+
+
+/* Title */
+#modalTitle {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 15px;
+  color: #333;
+  text-align: center;
+}
+
+/* Content box for text */
+.modal-body {
+  background: #ffe4ec; /* soft pink background */
+  padding: 20px;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px; /* spacing between each text line */
+}
+
+/* Each line of text */
+.modal-body p {
+  margin: 0;
+  font-size: 1rem;
+  color: #444;
+  line-height: 1.5;
+}
+
+
+#transition-overlay {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.8s ease; 
+  z-index: 99999;
+}
+#transition-overlay.active {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+

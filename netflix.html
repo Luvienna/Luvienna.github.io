@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Netflix Clone — Project</title>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/main.css"/>
+  <link rel="stylesheet" href="css/project page.css"/>
+</head>
+<body class="page-project">
+
+  <header class="hud pixel-frame">
+    <div class="hud-left">
+      <span class="brand">Lu-vienna.dev</span>
+      <div class="stats"><span class="chip">LV 03</span></div>
+    </div>
+    <nav class="hud-nav">
+      <a href="home.html">Home</a>
+      <a href="about-me.html">About</a>
+      <a href="experience.html">School & Work</a>
+      <a href="projects.html" class="active">Projects</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+<section class="project-detail-wrapper">
+    <button id="closeBtn" class="btn close-btn" style="background-color: hotpink;">✖ Close</button>
+
+    <section class="project-detail">
+      <!-- Left: video(s) -->
+      <div class="project-col image" style="border-color: brown;">
+        <div class="project-col image" style="border-color: brown;">
+          <video style="margin-top: 100px; margin-bottom: 103px;"
+            src="portfolio images/netflix screenrecord.mp4" 
+            autoplay 
+            muted 
+            loop 
+            playsinline>
+          </video>
+      </div>
+    </div>
+
+
+  <!-- Right: all text together -->
+  <div class="project-col text" style="border-color: brown;">
+        <div class="project-col text" style="border-color: brown;">
+  <h2 style="color: hotpink;">Netflix Clone</h2>
+
+  <p>
+    Netflix Clone: This project is a full front-end recreation of the Netflix interface.
+    My goal was to capture the feel of the original site while improving my
+    ability to design complex, responsive layouts and interactive features.
+  </p>
+
+  <h3 style="color: hotpink;">What I Learned</h3>
+  <p>
+    <strong style="color: rgb(200, 39, 82);">Advanced CSS & Layouts:</strong> I worked extensively with
+    Flexbox and Grid to build a fluid multi-column design.  
+    Careful spacing and alignment helped match the authentic Netflix look
+    across screens large and small.
+  </p>
+  <p>
+    <strong style="color: rgb(200, 39, 82);">Dynamic UI with JavaScript:</strong> I built horizontal
+    scrolling carousels and hover effects, using DOM manipulation to create
+    smooth transitions and interactive elements that react instantly to user
+    input.
+  </p>
+  
+  <h3 style="color: hotpink;">Tech Stack</h3>
+  <ul>
+    <li>HTML</li>
+    <li>Tailwind CSS</li>
+    <li>JavaScript</li>
+  </ul>
+
+  <div class="project-links">
+    <a class="btn secondary"
+       href="https://github.com/Luvienna/Netflix-front-end-clone"
+       target="_blank" style="color: hotpink; font-size: 25px;">View Code</a>
+  </div>
+</div>
+</section>
+
+<script>
+  document.getElementById("closeBtn").addEventListener("click", function() {
+    // Save the target scene in localStorage
+    localStorage.setItem("returnToScene", "scene-7");
+    // Go back to projects.html (no hash!)
+    window.location.href = "projects.html";
+  });
+</script>
+
+
+</body>
+</html>

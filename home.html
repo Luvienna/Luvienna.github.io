@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Lu-vienna — Pixel Girl</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/main.css"/>
+</head>
+<body class="page-home">
+
+
+  <!-- HUD / TOP BAR -->
+  <header class="hud pixel-frame">
+    <div class="hud-left">
+      <span class="brand">Lu-vienna's Portfolio</span>
+      <div class="stats"></div>
+    </div>
+      <nav class="hud-nav">
+        <a href="home.html">Home</a>
+        <a href="about-me.html">About</a>
+        <a href="experience.html">School & Work</a>
+        <a href="projects.html">Projects</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+  </header>
+
+  <!-- HERO ONLY -->
+  <section id="hero" class="hero">
+    <div class="stage pixel-frame">
+
+      <!-- Character Box -->
+      <div class="char-box">
+        <img id="avatar" src="portfolio images/avatar -- pijama outfit - no bg.png" alt="Lu-vienna avatar">
+      </div>
+
+      <!-- Wardrobe Box -->
+      <div class="wardrobe-box">
+        <h3 class="wardrobe-title">Wardrobe</h3>
+        <div class="outfits">
+          <div class="outfit-slot" data-outfit="1"> <img src="portfolio images/avatar -- pink outfit1 - no bg.png" alt="outfit1"><p>Outfit 1</p></div>
+          <div class="outfit-slot" data-outfit="2"> <img src="portfolio images/avatar -- brown outfit2 -- no bg.png" alt="outfit2"> <p>Outfit 2</p></div>
+          <div class="outfit-slot" data-outfit="3"> <img src="portfolio images/avatar -- black outfit3-- no bg.png" alt="Outfit3"><p>Outfit 3</p></div>
+          <div class="outfit-slot" data-outfit="4"> <img src="portfolio images/avatar -- red outfit5-- no bg.png" alt="Outfit4"><p>Outfit 4</p></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Dialogue Box -->
+    <div class="dialog pixel-frame">
+      <div class="nameplate">Luvienna ★</div>
+      <p id="dialog-text"></p>
+      <div class="dialog-buttons">
+        <button class="back-btn" id="back-btn" style="display:none;">◁ Back</button>
+        <button class="next-btn" id="next-btn">Next ▷</button>
+        <button class="start-btn" id="start-btn" onclick="window.location.href='about-me.html'">Start ▶</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Transition overlay -->
+  <div id="transition-overlay"></div>
+
+  <script src="javascript/main.js"></script>
+</body>
+</html>

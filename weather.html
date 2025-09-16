@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Weather App — Project</title>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/main.css"/>
+  <link rel="stylesheet" href="css/project page.css"/>
+</head>
+<body class="page-project">
+
+  <header class="hud pixel-frame">
+    <div class="hud-left">
+      <span class="brand">Lu-vienna.dev</span>
+      <div class="stats"><span class="chip">LV 03</span></div>
+    </div>
+    <nav class="hud-nav">
+      <a href="home.html">Home</a>
+      <a href="about-me.html">About</a>
+      <a href="experience.html">School & Work</a>
+      <a href="projects.html" class="active">Projects</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+<section class="project-detail-wrapper">
+    <button id="closeBtn" class="btn close-btn" style="background-color: rgb(253, 61, 151);">✖ Close</button>
+
+    <section class="project-detail">
+      <!-- Left: video(s) -->
+      <div class="project-col image" style="border-color: orangered;">
+        <div class="project-col image" style="border-color: orangered;">
+        <video style="margin-top: 100px; margin-bottom: 81px;"
+          src="portfolio images/weather screenrecord.mp4" 
+          autoplay 
+          muted 
+          loop 
+          playsinline>
+        </video>
+        </div>
+      </div>
+
+
+  <!-- Right: all text together -->
+  <div class="project-col text" style="border-color: orangered;">
+    <div class="project-col text" style="border-color: orangered;">
+  <h2 style="color: rgb(253, 61, 151);">Weather App</h2>
+
+  <p>
+    Weather App: A clean, responsive web app that delivers real-time weather updates.
+    I built it to strengthen my skills in working with live data and
+    third-party APIs while keeping the interface simple and intuitive.
+  </p>
+
+  <h3 style="color: rgb(253, 61, 151);">What I Learned</h3>
+  <p>
+    <strong style="color: rgb(106, 0, 94);">API Integration:</strong> Practiced making asynchronous
+    requests to a weather API, parsing JSON, and updating the UI on the fly.
+  </p>
+  
+
+  <h3 style="color: rgb(253, 61, 151);">Tech Stack</h3>
+  <ul>
+    <li>HTML</li>
+    <li>Tailwind CSS</li>
+    <li>JavaScript</li>
+  </ul>
+
+  <h3 style="color: rgb(253, 61, 151);">The Creative Process</h3>
+  <p>
+    I focused on clarity and usability: a minimalist color scheme, a single search field, and clear data
+    presentation. The goal was a seamless user experience even for quick,
+    one-handed checks on a mobile device.
+  </p>
+
+  <div class="project-links">
+    <a class="btn secondary"
+       href="https://github.com/Luvienna/Weather-app"
+       target="_blank" style="color: rgb(253, 61, 151); font-size: 25px;">View Code</a>
+  </div>
+</div>
+
+</section>
+
+<script>
+  document.getElementById("closeBtn").addEventListener("click", function() {
+    // Save the target scene in localStorage
+    localStorage.setItem("returnToScene", "scene-7");
+    // Go back to projects.html (no hash!)
+    window.location.href = "projects.html";
+  });
+</script>
+
+
+</body>
+</html>

@@ -1,0 +1,105 @@
+/* ===== Projects Library ===== */
+
+/* First scene - character + dialogue */
+.char-box.full { 
+  width:100%; 
+  height: 700px; 
+  background: url('https://i.pinimg.com/1200x/39/82/32/398232d05de56e510b1477ba475e392f.jpg');}
+
+.char-box.full img {
+  margin-left: -400px;
+  margin-top: 300px;
+}
+
+
+
+
+/* Grid of books */
+.grid-books {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+  margin-top: 20px;
+}
+
+
+.dialog { 
+  margin-top: 20px; 
+  margin-bottom: 10px;
+  padding: 14px; 
+  border: 3px solid var(--border); 
+  background: #fff; 
+  position: relative; } 
+
+.dialog .nameplate { 
+    position: absolute; 
+    top: -14px; left: 16px; 
+    padding: 6px 10px; 
+    background: var(--pink); 
+    border: 3px solid var(--border); 
+    font-family: "Press Start 2P", monospace; 
+    font-size: 12px; }
+
+
+.dialog p { 
+  min-height: 60px; 
+  font-size:22px; 
+  line-height:1.25; 
+  margin:6px 0 10px 
+} 
+
+
+#transition-overlay {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.8s ease; 
+}
+
+.scene { display: none; }
+.active { display: block; }
+
+
+/* Mock pixel book */
+.pixel-book {
+  aspect-ratio: 3/4;
+  padding: 12px;
+  display: flex; 
+  flex-direction: column; 
+  align-items: center; 
+  justify-content: center;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.pixel-book {
+  background: linear-gradient(135deg,#ffe1f2,#d6f9f9);
+  margin-bottom: 10px;
+  overflow: hidden;  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pixel-book img {
+  width: 90%;
+  height: 80%;
+  object-fit: cover; 
+  margin-bottom: 20px;
+  border: 1px solid ;
+}
+
+
+.pixel-book .title {
+  font-family: "Press Start 2P";
+  font-size: 10px;
+  text-align: center;
+  background: var(--green);
+  border: 2px solid var(--border);
+  border-radius: 2px;
+  padding: 2px 70px;
+}

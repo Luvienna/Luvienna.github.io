@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lu-vienna.dev — Landing</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    * {margin:0;padding:0;box-sizing:border-box;}
+    html, body {
+      height:100%;
+      font-family:'Inter', sans-serif;
+    }
+
+    /* Full-screen background gif */
+    body {
+      background: url("portfolio images/start.gif") center center / cover no-repeat;
+      height:100%;
+      position:relative;
+      overflow:hidden;
+    }
+
+    /* Dark overlay if you want a subtle shade, remove if not needed */
+    body::before {
+      content:"";
+      position:absolute;
+      inset:0;
+      background:rgba(0, 0, 0, 0);
+      z-index:0;
+    }
+
+    /* Container for the links placed over the PC screen */
+    .link-box {
+      position:absolute;
+      /* Adjust these to fit the PC screen in your gif */
+      top:35%;           /* vertical position */
+      left:50%;          /* horizontal position */
+      transform:translate(-50%, -50%); /* center in that spot */
+      z-index:1;
+      text-align:center;
+    }
+
+    .link-box a {
+      display:block;
+      margin:0.75rem 0;
+      color:#fff;
+      font-size:1.5rem;
+      text-decoration:none;
+      font-weight:600;
+      transition:color 0.3s ease;
+    }
+
+    .link-box a:hover {
+      color:#ff4fd0; /* hot pink hover */
+    }
+  </style>
+</head>
+<body>
+  <!-- Links that sit “inside” the PC of the gif -->
+  <div class="link-box">
+    <a href="home.html">Start</a>
+    <a href="shortcut">Cheatcode</a>
+  </div>
+</body>
+</html>

@@ -1,0 +1,278 @@
+/* Contact page additions — keeps the same visual language as main.css variables */
+:root {
+  /* If main.css defines these already, these will match; otherwise defaults are here */
+  --border: #4f4f4f;
+  --pink: #ffc2cb;
+  --mint: #b7e4c7;
+}
+
+/* Ensure scenes hidden by default, first shown by JS */
+.scene { display: none; padding: 40px 20px; border-top: 3px solid var(--border); min-height: 80vh; }
+#contact-scene-8 { display: block; }
+
+.char-box {
+  min-height: 800px;
+  border: 3px solid var(--border);
+  border-radius: 6px;
+  background: url('../portfolio images/ambient -- statue.jpg') center/cover no-repeat;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  padding-bottom: 0px;  
+}
+
+.char-box.full img {
+  max-height: 100%;
+  image-rendering: pixelated;
+}
+/* Dialog (keeps main look) */
+.dialog { margin-top: 16px; padding: 14px; border: 3px solid var(--border); background: #fff; position: relative; box-shadow: 3px 3px 0 #333; }
+.dialog .nameplate { position: absolute; top: -14px; left: 16px; padding: 6px 10px; background: var(--pink); border: 3px solid var(--border); font-family: "Press Start 2P"; font-size: 12px; }
+.dialog p { min-height: 60px; font-size: 22px; line-height: 1.25; margin: 6px 0 10px; }
+
+/* Narrator mini avatar */
+.narrator { display: grid; grid-template-columns: 120px 1fr; gap: 14px; margin-top: 16px; align-items: start; }
+.narrator .mini {margin-top: 30px; width: 120px; height: 120px; border: 3px solid var(--border); border-radius: 8px; display:flex; align-items:center; justify-content:center; overflow:hidden; background:#fff; box-shadow:3px 3px 0 var(--border); }
+.narrator .mini img { max-width:100%; max-height:100%; object-fit:contain; image-rendering:pixelated; }
+
+/* Puzzle layout */
+.puzzle-wrapper { display:flex; gap:18px; align-items:flex-start; margin-top: 18px; justify-content:center; }
+.puzzle-board {
+  width: 360px;
+  height: 360px;
+  display: grid;
+  margin-top: 20px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 6px;
+  background: #fff;
+  border: 3px solid var(--border);
+  padding: 6px;
+  box-shadow: 3px 3px 0 var(--border);
+  border-radius: 8px;
+}
+.puzzle-cell {
+  position: relative;
+  background: #f5f5f5;
+  border: 2px dashed rgba(0,0,0,0.08);
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+
+.puzzle-tray {
+  width: 420px;
+  height: 398px;
+  display:flex;
+  flex-wrap:wrap;
+  gap: 8px;
+  padding: 8px;
+  background: linear-gradient(#fff,#fff);
+  border: 3px solid var(--border);
+  border-radius: 8px;
+  box-shadow: 3px 3px 0 var(--border);
+  align-content:flex-start;
+  justify-content:center;
+}
+
+.puzzle-piece {
+  width: 112px; /* will be adjusted by JS to exact piece size, but keep an initial size */
+  height: 112px;
+  background-repeat: no-repeat;
+  cursor: grab;
+  border: 2px solid #ddd;
+  box-shadow: 2px 2px 0 rgba(0,0,0,0.12);
+  user-select: none;
+}
+.puzzle-piece.placed {
+  border-color: #6bd76b;
+  box-shadow: none;
+  cursor: default;
+}
+
+/* result text + gift */
+.puzzle-result { text-align:center; font-weight:700; margin-top:12px; }
+
+/* ---------------- GIFT BOX ---------------- */
+
+.box {
+  position: relative;
+}
+.box::before {
+  content: "";
+  width: 440px;
+  height: 440px;
+  background-color: var(--pink);
+  position: absolute;
+  z-index: -1;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+}
+.box-body {
+  position: relative;
+  height: 200px;
+  width: 200px;
+  background: linear-gradient(#ffabdc,#ff50b6);
+  border-bottom-left-radius: 5%;
+  border-bottom-right-radius: 5%;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+}
+.box-body::after {
+  content: "";
+  position: absolute;
+  top: 0; bottom: 0; left: 50%;
+  transform: translateX(-50%);
+  width: 50px;
+  background: linear-gradient(#1cb7aa,#04cfcc);
+}
+
+/* Lid + bow */
+.box-lid {
+  position: absolute;
+  z-index: 2;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 90%;
+  height: 40px;
+  width: 220px;
+  border-radius: 5%;
+  background-color: #ffabdc;
+  box-shadow: 0 8px 4px -4px rgba(0, 0, 0, 0.3);
+}
+.box-lid::after {
+  content: "";
+  position: absolute;
+  top: 0; bottom: 0; left: 50%;
+  transform: translateX(-50%);
+  width: 50px;
+  background: linear-gradient(#1cb7aa,#04cfcc);
+}
+
+/* Bow attached to lid */
+.box-bowtie {
+  position: absolute;
+  top: -120px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+}
+
+.box-bowtie::before,
+.box-bowtie::after {
+  content: "";
+  width: 83px;
+  height: 83px;
+  border: 17px solid rgb(27, 156, 145);
+  border-radius: 50% 50% 0 50%;
+  position: absolute;
+}
+
+.box-bowtie::before {
+  right: 100%;
+  transform: skew(10deg, 10deg);
+}
+
+.box-bowtie::after {
+  left: 100%;
+  transform: rotate(90deg) skew(10deg, 10deg);
+}
+
+
+/* ---------------- OPEN EFFECT ---------------- */
+.box.open .box-lid {
+  animation: lid-open 1s forwards ease-in-out;
+}
+.box.open .box-body {
+  animation: body-wiggle 0.8s forwards ease-in-out;
+}
+
+@keyframes lid-open {
+  0%   { transform: translateX(-50%) translateY(0) rotate(0); }
+  40%  { transform: translateX(-50%) translateY(-60px) rotate(-10deg); }
+  100% { transform: translateX(-50%) translateY(-180px) rotate(-25deg); }
+}
+@keyframes body-wiggle {
+  0%   { transform: translateY(0) rotate(0); }
+  25%  { transform: translateY(8px) rotate(2deg); }
+  50%  { transform: translateY(-6px) rotate(-2deg); }
+  100% { transform: translateY(0) rotate(0); }
+}
+
+/* ---------------- OVERLAY ---------------- */
+.gift-overlay {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: url('../portfolio images/gift card.png') center center / contain no-repeat;
+  background-color: #f5f6f1;
+  opacity: 0;
+  transform: scale(0.9);
+  transition: all 0.6s ease-in-out;
+  z-index: 999;
+  pointer-events: none;
+}
+
+.gift-overlay.active {
+  opacity: 1;
+  transform: scale(1);
+  pointer-events: auto;
+}
+
+.gift-overlay .overlay-content {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.gift-overlay .contact-links {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.gift-overlay .contact-links li {
+  position: absolute;
+  font-family: "VT323", monospace;
+  font-size: 28px;
+  color: #FE7AC1;
+}
+
+.gift-overlay .contact-links a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* === Position each line by ID === */
+.gift-overlay #email   { top: 18%; left: 45%; }   /* adjust % until aligned with email icon */
+.gift-overlay #phone   { top: 39%; left: 53%; }   /* adjust */
+.gift-overlay #github  { top: 59%; left: 46%; }   /* adjust */
+.gift-overlay #cv      { top: 79%; left: 42%; }   /* adjust */
+
+.gift-overlay button {
+  position: absolute;
+  top: 20px;
+  right: 25px;
+  padding: 10px 20px;
+  background: #fff;
+  border: 3px solid #FE7AC1;
+  color: #FE7AC1;
+  cursor: pointer;
+  font-family: "Press Start 2P", monospace;
+  z-index: 1000; /* make sure it's above content */
+}
+
+
+/* ---------------- POSITION FIX ---------------- */
+#contact-scene-12 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 70vh;
+}

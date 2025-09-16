@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Lu-vienna.dev — Shortcut</title>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/about.css">
+  <link rel="stylesheet" href="css/projects.css">
+  <link rel="stylesheet" href="css/contact.css">
+</head>
+<style>
+.gift-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 200px; /* move it down a bit */
+}
+</style>
+
+<body class="page-shortcut">
+
+  <div class="page">
+
+    <!-- HUD -->
+    <header class="hud pixel-frame">
+      <div class="hud-left">
+        <span class="brand">Lu-vienna.dev</span>
+        <div class="stats"><span class="chip mint">LV 03</span></div>
+      </div>
+      <nav class="hud-nav">
+        <a href="index.html">Home</a>
+        <a href="about-me.html">About</a>
+        <a href="experience.html">School & Work</a>
+        <a href="projects.html">Projects</a>
+        <a href="contact.html">Contact</a>
+        <a href="shortcut.html" class="active">Shortcut</a>
+      </nav>
+    </header>
+
+    <h2 class="level-title" id="level-title">Level 1 — Shortcut Quest</h2>
+
+    <!-- === Scene 1 : Intro === -->
+    <section class="scene" id="sc-scene-1" style="display:block">
+      <div class="grid-2 align-center">
+        <div class="polaroid">
+          <img id="myPhoto" src="portfolio images/avatar -- face.png" alt="Me">
+          <div class="cap">“Creating one pastel pixel at a time.”</div>
+        </div>
+        <div class="dialog-big">
+          <div class="nameplate">LUVIENNA ★</div>
+          <p id="dialog-text-1"></p>
+          <div class="dialog-buttons">
+            <button id="back-btn-1" class="back-btn" style="display:none">◁ Back</button>
+            <button id="next-btn-1" class="next-btn">Next ▷</button>
+            <button id="start-btn-1" class="start-btn" style="display:none">Start ▶</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- === Scene 2 : Skills === -->
+    <section class="scene" id="sc-scene-2">
+      <div class="skill-groups">
+        <div class="group">
+          <h3>Personal Skills</h3>
+          <div class="skill"><span class="label">Fast Learner</span><span class="hearts" data-lvl="5"></span></div>
+          <div class="skill"><span class="label">Communication</span><span class="hearts" data-lvl="4"></span></div>
+          <div class="skill"><span class="label">Troubleshooting</span><span class="hearts" data-lvl="4"></span></div>
+          <div class="skill"><span class="label">Teamwork</span><span class="hearts" data-lvl="4"></span></div>
+        </div>
+
+        <div class="group">
+          <h3>Languages</h3>
+          <div class="skill"><span class="label">English</span><span class="hearts" data-lvl="5"></span></div>
+          <div class="skill"><span class="label">Spanish</span><span class="hearts" data-lvl="5"></span></div>
+          <div class="skill"><span class="label">Papiamentu</span><span class="hearts" data-lvl="5"></span></div>
+          <div class="skill"><span class="label">Dutch</span><span class="hearts" data-lvl="3"></span></div>
+
+        </div>
+
+        <div class="group">
+          <h3>Tech Skills</h3>
+          <div class="skill"><span class="label">HTML/CSS</span><span class="hearts" data-lvl="4"></span></div>
+          <div class="skill"><span class="label">JavaScript</span><span class="hearts" data-lvl="3"></span></div>
+          <div class="skill"><span class="label">Python</span><span class="hearts" data-lvl="4"></span></div>
+          <div class="skill"><span class="label">React</span><span class="hearts" data-lvl="4"></span></div>
+        </div>
+
+        <div class="group">
+          <h3>Hobbies</h3>
+          <div class="skill"><span class="label">Video Games</span><span class="hearts" data-lvl="4"></span></div>
+          <div class="skill"><span class="label">Puzzles</span><span class="hearts" data-lvl="5"></span></div>
+          <div class="skill"><span class="label">Crochet</span><span class="hearts" data-lvl="5"></span></div>
+          <div class="skill"><span class="label">Baking</span><span class="hearts" data-lvl="4"></span></div>
+        </div>
+      </div>
+
+      <div class="dialog-buttons" style="text-align:center; margin-top:40px; margin-left: 700px;">
+        <button id="next-scene-3" class="next-btn">Next ▷</button>
+      </div>
+    </section>
+
+    <!-- === Scene 3 : Projects === -->
+    <section class="scene" id="sc-scene-3">
+      <div class="grid-books">
+          <a href="shine.html?from=shortcut" class="pixel-book" style="background: #42523a; color: goldenrod;">
+            <img src="portfolio images/book -- shine.png" alt="Shine Website">
+            <div class="spine"></div>
+            <span class="title"><h2>SHINE WEBSITE</h2></span>
+          </a>
+
+          <a href="stardust.html" class="pixel-book" style="background: #02192c; color: burlywood;">
+            <img src="portfolio images/book -- stardust.png" alt="Stardust Website">
+            <div class="spine"></div>
+            <span class="title"><h2>STARDUST WEBSITE</h2></span>
+          </a>
+
+          <a href="budget.html" class="pixel-book" style="background: #e7c5f3; color: rgb(56, 28, 98);">
+            <img src="portfolio images/book -- budget.png" alt="Budget Tracker">
+            <div class="spine"></div>
+            <span class="title" style="background-color: rgb(255, 219, 248);"><h2>BUDGET TRACKER</h2></span>
+          </a>
+          
+          <a href="weather.html" class="pixel-book" style="background: #4d5681; color: rgb(255, 165, 127);">
+            <img src="portfolio images/book -- weather.png" alt="Pomodoro App">
+            <div class="spine"></div>
+            <span class="title"><h2>WEATHER APP</h2></span>
+          </a>
+
+          <a href="netflix.html" class="pixel-book" style="background: #dc255d; color: rgb(255, 129, 198);">
+            <img src="portfolio images/book -- netflix.png" alt="Netflix Website Clone">
+            <div class="spine"></div>
+            <span class="title" style="background-color: rgb(255, 219, 225);"><h2>Netflix Clone</h2></span>
+          </a>
+
+          <a href="tetris.html" class="pixel-book" style="background: #da8592; color: #ff9096;">
+            <img src="portfolio images/book -- tetris.jpg" alt="Tetris Clone">
+            <div class="spine"></div>
+            <span class="title" style="background-color: antiquewhite;"><h2>TETRIS CLONE</h2></span>
+          </a>
+      </div>
+
+      <div class="dialog-buttons" style="text-align:center; margin-top:40px; margin-left: 700px;">
+        <button id="next-scene-4" class="next-btn">Next ▷</button>
+      </div>
+    </section>
+
+    <!-- === Scene 4 : Gift / Contact === -->
+    <section class="scene" id="sc-scene-4">
+      <div class="narrator">
+      <div class="mini"><img id="miniAvatar9" alt="mini avatar"></div>
+      <div class="dialog">
+        <div class="nameplate">LUVIENNA ★</div>
+        <p id="dialog-text-4"></p>
+        <div class="dialog-buttons">
+          <button id="back-btn-4" class="back-btn" style="display:none">◁ Back</button>
+          <button id="next-btn-4" class="next-btn">Next ▷</button>
+          <button id="start-btn-4" class="start-btn" style="display:none">Start ▶</button>
+        </div>
+      </div>
+    </div>
+    </section>
+
+    <section class="scene" id="sc-scene-5">
+      <div class="gift-center">
+        <div class="box" id="giftBox">
+          <div class="box-lid"></div>
+          <div class="box-bowtie"></div>
+          <div class="box-body"></div>
+        </div>
+        <div class="gift-overlay" id="giftOverlay">
+          <button id="closeGift">✖</button>
+          <div class="overlay-content">
+            <ul class="contact-links">
+              <li><a href="mailto:you@example.com">you@example.com</a></li>
+              <li><a href="tel:+123456789">+1 234-567-89</a></li>
+              <li><a href="https://github.com/yourname" target="_blank">GitHub</a></li>
+              <li><a href="portfolio files/YourCV.pdf" target="_blank">Download CV</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </div>
+
+<script>
+
+  // ================== Avatar Setup ==================
+(function applyAvatar() {
+  const DEFAULT = "portfolio images/avatar -- p - no bg.png";
+  const saved = localStorage.getItem("avatarOutfitSrc") || DEFAULT;
+  document.querySelectorAll("#mainAvatar, #miniAvatar9, #miniAvatar11")
+    .forEach(img => { if (img) img.src = saved; });
+})();
+
+// ===== Dialog text for each scene =====
+const aboutDialogs = {
+  scene1: [
+    "You see, these files you're helping me find aren't just for coding. They're the magic I use to build and protect this world. With my trusty keyboard and mouse, I fight off the dreaded bugs that try to break everything. But beyond the myth, I'm a young and driven programmer. I'm just a 19-year-old student named Lu-Vienna St.Jago, studying at Frater Aurelio SBO in the ICT sector, and I'm eager to expand my skills and gain hands-on experience in the IT field.",
+    "I'm a self-taught programmer, guided by countless YouTube tutorials and courses. I've built several personal projects to sharpen my technical abilities, creativity, and problem-solving skills. I've tried both front-end and back-end programming, and while I enjoy the logic and functionality of the back-end, my heart truly belongs to the front-end. I am specifically in love with web development because I can see my code bloom to life into something beautiful and interactive. I'm highly motivated, curious, creative, and I'm not afraid to ask questions or tackle challenges outside my comfort zone. I am also eager to explore new technologies and roles within the field.",
+    "And that's why this file is so important. I've been given an incredible opportunity through the Koninkrijk Burst program, an initiative designed to help Caribbean students like me get internships and gain experience abroad. This file is more than just my work; it's the key to my next step into the world of technology, I can unlock new possibilities and showcase my full potential. And that's why we absolutely have to get it back!",
+    "Amazing! Now that you have all the info about me needed, we can go search for the next piece."
+  ],
+
+  scene4: [
+    "As a token of my immense gratitude, I have a special reward for you."
+  ]
+};
+
+// ===== Show / hide scenes =====
+function showScene(num) {
+  document.querySelectorAll(".scene").forEach(s => s.style.display = "none");
+  document.getElementById(`sc-scene-${num}`).style.display = "block";
+  document.getElementById("level-title").textContent = `Level ${num} — Shortcut Quest`;
+}
+
+// ===== Typewriter effect =====
+function typeDialog(sceneKey, textEl, nextBtn, backBtn, startBtn) {
+  const dialogs = aboutDialogs[sceneKey];
+  let index = 0;
+  let isTyping = false;
+  let typing;
+
+  function write(i) {
+    clearInterval(typing);
+    textEl.textContent = "";
+    let pos = 0;
+    isTyping = true;
+    typing = setInterval(() => {
+      textEl.textContent += dialogs[i][pos++];
+      if (pos >= dialogs[i].length) {
+        clearInterval(typing);
+        isTyping = false;
+      }
+    }, 30);
+    backBtn.style.display = i > 0 ? "inline-block" : "none";
+    nextBtn.style.display = i < dialogs.length - 1 ? "inline-block" : "none";
+    startBtn.style.display = i === dialogs.length - 1 ? "inline-block" : "none";
+  }
+
+  function finish() {
+    clearInterval(typing);
+    textEl.textContent = dialogs[index];
+    isTyping = false;
+  }
+
+  nextBtn.onclick = () => {
+    if (isTyping) return finish();
+    if (index < dialogs.length - 1) write(++index);
+  };
+  backBtn.onclick = () => {
+    if (isTyping) return finish();
+    if (index > 0) write(--index);
+  };
+  startBtn.onclick = () => {
+    showScene(2); // move to next scene
+  };
+
+  write(index);
+}
+
+// =========== skills hearts ===========
+document.querySelectorAll('.hearts').forEach(el => {
+  const level = parseInt(el.dataset.lvl, 10);
+  el.textContent = "♥".repeat(level);
+});
+
+document.getElementById("next-scene-3").addEventListener("click", () => showScene(3));
+document.getElementById("next-scene-4").addEventListener("click", () => showScene(4));
+document.getElementById("next-scene-5")?.addEventListener("click", () => showScene(5));
+document.getElementById("dialog-text-4").textContent = "";
+
+
+typeDialog(
+  "scene1",
+  document.getElementById("dialog-text-1"),
+  document.getElementById("next-btn-1"),
+  document.getElementById("back-btn-1"),
+  document.getElementById("start-btn-1")
+);
+
+document.getElementById("next-scene-4")
+  .addEventListener("click", () => {
+    showScene(4);
+    typeDialog(
+      "scene4",
+      document.getElementById("dialog-text-4"),
+      document.getElementById("next-btn-4"),
+      document.getElementById("back-btn-4"),
+      document.getElementById("start-btn-4")
+    );
+  });
+
+
+
+// Gift box open/close
+const giftBox = document.getElementById('giftBox');
+const giftOverlay = document.getElementById('giftOverlay');
+document.getElementById('closeGift').addEventListener('click', () => {
+  giftOverlay.classList.remove('active');
+  giftBox.classList.remove('open');
+});
+giftBox.addEventListener('click', () => {
+  giftBox.classList.add('open');
+  setTimeout(() => giftOverlay.classList.add('active'), 800);
+});
+
+// run after iframe is added to the DOM
+const frame = document.querySelector("#bookFrame");
+frame.addEventListener("load", () => {
+  const doc = frame.contentDocument;
+  const close = doc.querySelector(".close-btn");
+  if (close) {
+    close.addEventListener("click", e => {
+      e.preventDefault();       // stop the normal link
+      showScene(4);             // your function to show scene 4
+      frame.remove();           // or hide the iframe/lightbox
+    });
+  }
+});
+
+window.addEventListener("message", e => {
+  if (e.data.action === "closeBook") {
+    showScene(4);
+  }
+});
+
+</script>
+</body>
+</html>

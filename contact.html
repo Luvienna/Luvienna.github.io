@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Final Level — Contact</title>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/main.css"/>
+  <link rel="stylesheet" href="css/contact.css"/>
+</head>
+<body class="page-contact">
+
+<div class="page">
+
+  <!-- HUD -->
+  <header class="hud pixel-frame">
+    <div class="hud-left">
+      <span class="brand">Lu-vienna.dev</span>
+      <div class="stats"><span class="chip">LV 04</span></div>
+    </div>
+    <nav class="hud-nav">
+      <a href="home.html">Home</a>
+      <a href="about-me.html">About</a>
+      <a href="experience.html">School & Work</a>
+      <a href="projects.html">Projects</a>
+      <a href="contact.html" class="active">Contact</a>
+    </nav>
+  </header>
+
+  <h2 class="level-title">Level 4 — The Final Gift</h2>
+
+  <!-- Scene 8: Intro -->
+  <section class="scene" id="contact-scene-8">
+    <div class="char-box">
+      <img id="mainAvatar" alt="Avatar">
+    </div>
+    <div class="dialog">
+      <div class="nameplate">LUVIENNA ★</div>
+      <p id="dialog-text-8"></p>
+      <div class="dialog-buttons">
+        <button id="back-btn-8" class="back-btn" style="display:none">◁ Back</button>
+        <button id="next-btn-8" class="next-btn">Next ▷</button>
+        <button id="start-btn-8" class="start-btn" style="display:none">Continue ▶</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Scene 9: Narrator explains puzzle -->
+  <section class="scene" id="contact-scene-9">
+    <div class="narrator">
+      <div class="mini"><img id="miniAvatar9" alt="mini avatar"></div>
+      <div class="dialog">
+        <div class="nameplate">LUVIENNA ★</div>
+        <p id="dialog-text-9"></p>
+        <div class="dialog-buttons">
+          <button id="back-btn-9" class="back-btn" style="display:none">◁ Back</button>
+          <button id="next-btn-9" class="next-btn">Next ▷</button>
+          <button id="start-btn-9" class="start-btn" style="display:none">Start ▶</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Puzzle -->
+    <div class="puzzle-wrapper" id="puzzle-wrapper" style="display:none;">
+      <div class="puzzle-board" id="puzzle-board"></div>
+      <div class="puzzle-tray" id="puzzle-tray"></div>
+    </div>
+
+    <div id="puzzle-result" class="puzzle-result"></div>
+  </section>
+
+
+  <!-- Scene 10: Final narration -->
+<section class="scene" id="contact-scene-10">
+  <div class="char-box">
+    <img id="mainAvatar" alt="Avatar">
+  </div>
+  <div class="dialog">
+    <div class="nameplate">LUVIENNA ★</div>
+    <p id="dialog-text-10"></p>
+    <div class="dialog-buttons">
+        <button id="back-btn-10" class="back-btn" style="display:none">◁ Back</button>
+        <button id="next-btn-10" class="next-btn">Next ▷</button>
+        <button id="start-btn-10" class="start-btn" style="display:none">Claim ▶</button>
+      </div>
+    </div>
+</section>
+
+ <!-- Scene 11: Gift Box -->
+<!-- Scene 11: Gift Box -->
+<section class="scene" id="contact-scene-11">
+  <div id="contact-scene-12">
+    <div class="container">
+      <div class="box">
+        <div class="box-body"></div>
+        <div class="box-lid">
+          <div class="box-bowtie"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Overlay -->
+<div class="gift-overlay" id="giftOverlay">
+  <div class="overlay-content">
+    
+
+    <ul class="contact-links">
+      <li id="email"><a href="mailto:luviennastjago25@gmail.com">LUVIENNASTJAGO25@GMAIL.COM</a></li>
+      <li id="phone"><a href="tel:+59996762093">+5999 6762093</a></li>
+      <li id="github"><a href="https://github.com/Luvienna" target="_blank">github.com/Luvienna</a></li>
+      <li id="cv"><a href="LU-VIENNA ST.JAGO CV.pdf" download>Lu-vienna St.jago CV</a></li>
+    </ul>
+
+    <button onclick="closeOverlay()">Close</button>
+  </div>
+</div>
+
+
+
+<script src="javascript/contact.js"></script>
+</body>
+</html>

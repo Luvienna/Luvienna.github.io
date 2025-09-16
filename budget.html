@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Budget Trcaker App — Project</title>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/main.css"/>
+  <link rel="stylesheet" href="css/project page.css"/>
+</head>
+<body class="page-project">
+
+  <header class="hud pixel-frame">
+    <div class="hud-left">
+      <span class="brand">Lu-vienna.dev</span>
+      <div class="stats"><span class="chip">LV 03</span></div>
+    </div>
+    <nav class="hud-nav">
+      <a href="home.html">Home</a>
+      <a href="about-me.html">About</a>
+      <a href="experience.html">School & Work</a>
+      <a href="projects.html" class="active">Projects</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+<section class="project-detail-wrapper">
+    <button id="closeBtn" class="btn close-btn" style="background-color: rgb(68, 14, 118);">✖ Close</button>
+
+    <section class="project-detail">
+
+      <div class="project-col image" style="border-color: blueviolet;">
+         <div class="project-col image"style="border-color: blueviolet;">
+
+        <video style="margin-top: 20px;"
+          src="portfolio images/screenrecorder/budget screenrecord.mp4" 
+          autoplay 
+          muted 
+          loop 
+          playsinline>
+        </video>
+
+        <img style="margin-bottom: 138px;"
+        src="portfolio images/Projects Moodboards/budget tracker app moodboard.png" 
+        alt="Moodboard" 
+        class="extra-img">
+        </div>
+      </div>
+
+  <!-- Right: all text together -->
+  <div class="project-col text" style="border-color: blueviolet;">
+    <div class="project-col text" style="border-color: blueviolet;">
+
+  <h2 style="color: rgb(62, 3, 117);">Budget Tracker App</h2>
+
+  <p>
+    A complete web application that helps users record income and expenses,
+    set budget goals, and view spending patterns in clear charts.
+    This was my first full-stack build and an important step toward
+    understanding how a real production app fits together end-to-end.
+  </p>
+
+  <h3 style="color: rgb(62, 3, 117);">What I Learned</h3>
+  <p>
+    <strong>Full-Stack Workflow:</strong> Connected a responsive
+    front-end to a Firebase backend, handling data flow and state
+    management across the entire application.
+  </p>
+  <p>
+    <strong>Database & Auth:</strong> Implemented secure user
+    authentication and real-time storage with Firestore,
+    gaining experience in managing user sessions and protecting data.
+  </p>
+  <p>
+    <strong>Data Visualization:</strong> Integrated Chart.js to turn raw
+    financial records into intuitive graphs that update live as users
+    add or edit transactions.
+  </p>
+  <p>
+    <strong>UI/UX Design:</strong> Focused on a clean, modern interface
+    that makes personal finance approachable, with simple forms and
+    clear feedback on every action.
+  </p>
+
+  <h3 style="color: rgb(62, 3, 117);">Tech Stack</h3>
+  <ul>
+    <li>HTML / CSS / JavaScript</li>
+    <li>Firebase Authentication & Firestore Database</li>
+    <li>Chart.js for data visualization</li>
+  </ul>
+
+  <h3 style="color: rgb(62, 3, 117);">The Creative Process</h3>
+  <p>
+    I started by mapping the user journey—from creating an account to
+    logging expenses—then designed a clean dashboard that highlights key
+    numbers at a glance. Iterative testing guided the layout and color
+    choices, ensuring the app feels both professional and easy to use.
+  </p>
+
+  <div class="project-links">
+    <a class="btn secondary" style="color: rgb(62, 3, 117); font-size: 25px;"
+       href="https://github.com/Luvienna/budget-tracker/tree/main" target="_blank">View Code</a>
+  </div>
+
+</div>
+
+</section>
+
+<script>
+  document.getElementById("closeBtn").addEventListener("click", function() {
+    // Save the target scene in localStorage
+    localStorage.setItem("returnToScene", "scene-7");
+    // Go back to projects.html (no hash!)
+    window.location.href = "projects.html";
+  });
+</script>
+
+
+</body>
+</html>

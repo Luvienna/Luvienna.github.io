@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Tetris Game Clone — Project</title>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/main.css"/>
+  <link rel="stylesheet" href="css/project page.css"/>
+</head>
+<body class="page-project">
+
+  <header class="hud pixel-frame">
+    <div class="hud-left">
+      <span class="brand">Lu-vienna.dev</span>
+      <div class="stats"><span class="chip">LV 03</span></div>
+    </div>
+    <nav class="hud-nav">
+      <a href="home.html">Home</a>
+      <a href="about-me.html">About</a>
+      <a href="experience.html">School & Work</a>
+      <a href="projects.html" class="active">Projects</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+<section class="project-detail-wrapper">
+    <button id="closeBtn" class="btn close-btn" style="background-color: rgb(255, 79, 208);">✖ Close</button>
+
+    <section class="project-detail">
+      <!-- Left: video(s) -->
+      <div class="project-col image" style="border-color: rgb(255, 187, 0);">
+              <div class="project-col image" style="border-color: rgb(255, 187, 0);">
+
+        <video style="margin-top: 110px; margin-bottom: 126px;"
+          src="portfolio images/tetris screenrecord.mp4" 
+          autoplay 
+          muted 
+          loop 
+          playsinline>
+        </video>
+      </div>
+      </div>
+
+
+  <!-- Right: all text together -->
+  <div class="project-col text" style="border-color: rgb(255, 187, 0);">
+    <div class="project-col text" style="border-color: rgb(255,187,0);">
+
+  <h2 style="color: rgb(255,79,208);">Tetris Clone</h2>
+
+  <p>
+    A fully playable recreation of the classic puzzle game,
+    built from scratch with <strong>Pygame</strong>.
+    The goal was to design the core mechanics—piece movement,
+    rotation, and line clearing—while practicing real-time
+    input handling and game-loop logic.
+  </p>
+
+  <h3 style="color: rgb(255,79,208);">What I Learned</h3>
+  <p>
+    <strong>Game Logic:</strong> Managed game states and created
+    smooth falling, collision detection, and scoring systems.
+  </p>
+  <p>
+    <strong>Input Handling:</strong> Captured responsive
+    keyboard events for instant movement and rotation.
+  </p>
+
+  <h3 style="color: rgb(255,79,208);">Tech Stack</h3>
+  <ul>
+    <li>Python</li>
+    <li>Pygame</li>
+  </ul>
+
+  <h3 style="color: rgb(255,79,208);">The Creative Process</h3>
+  <p>
+    I kept the visuals intentionally simple: a limited color
+    palette and retro pixel font to highlight gameplay over
+    decoration. The focus was smooth performance and that
+    nostalgic arcade feel.
+  </p>
+
+  <div class="project-links">
+    <a class="btn secondary"
+       style="color: rgb(255,79,208); font-size: 25px;"
+       href="https://github.com/Luvienna/TETRIS-Game/tree/main"
+       target="_blank">View Code</a>
+  </div>
+
+</div>
+
+</section>
+
+<script>
+  document.getElementById("closeBtn").addEventListener("click", function() {
+    // Save the target scene in localStorage
+    localStorage.setItem("returnToScene", "scene-7");
+    // Go back to projects.html (no hash!)
+    window.location.href = "projects.html";
+  });
+</script>
+
+
+</body>
+</html>

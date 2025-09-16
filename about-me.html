@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>About Lu-vienna</title>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/main.css"/>
+  <link rel="stylesheet" href="css/about.css"/>
+</head>
+<body class="page-about">
+
+  <div class="page">
+
+    <!-- HUD header (same as index for uniformity) -->
+    <header class="hud pixel-frame">
+      <div class="hud-left">
+        <span class="brand">Lu-vienna.dev</span>
+        <div class="stats">
+          <span class="chip">LV 01</span>
+        </div>
+      </div>
+      <nav class="hud-nav">
+        <a href="home.html">Home</a>
+        <a href="about-me.html" class="active">About</a>
+        <a href="experience.html">School & Work</a>
+        <a href="projects.html">Projects</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </header>
+
+    <section class="section" id="xp">
+  <h2 class="level-title" id="level-title">Level 1 — The Person Behind the World</h2>
+
+    <!-- Scene 1: Intro with avatar + dialogue -->
+    <section class="scene" id="about-scene-1">
+      <div class="char-box">
+        <img id="mainAvatar" alt="Avatar outfit">
+      </div>
+      <div class="dialog">
+      <div class="nameplate">LUVIENNA ★</div>
+        <p id="dialog-text-1"></p>
+        <div class="dialog-buttons">
+          <button id="back-btn-1" class="back-btn" style="display:none">◁ Back</button>
+          <button id="next-btn-1" class="next-btn">Next ▷</button>
+          <button id="start-btn-1" class="start-btn" style="display:none">Sure ▶</button>
+        </div>
+      </div>
+    </section>
+
+<!-- Scene 2: Meet the Creator -->
+<section class="scene" id="about-scene-2">
+  <div class="grid-2 align-center">
+    <!-- Polaroid -->
+    <div class="polaroid">
+      <img id="myPhoto" src="https://i.pinimg.com/736x/f2/8a/3d/f28a3d28ec4ae299aff55082d6e97849.jpg" alt="Me">
+      <div class="cap">“Creating one pastel pixel at a time.”</div>
+    </div>
+    <div class="dialog-big">
+    <div class="nameplate">LUVIENNA ★</div>
+    <p id="dialog-text-2"></p>
+    <div class="dialog-buttons">
+          <button id="back-btn-2" class="back-btn" style="display:none">◁ Back</button>
+          <button id="next-btn-2" class="next-btn">Next ▷</button>
+          <button id="start-btn-2" class="start-btn" style="display:none">Start ▶</button>
+    </div>
+    </div>
+  </div>
+</section>
+
+<!-- Scene 3: Memory Flip Mini-Game -->
+<section class="scene" id="about-scene-3">
+    <div class="char-box-2">
+      <img id="mainAvatar" alt="Avatar outfit">
+    </div>
+    <div class="dialog">
+    <div class="nameplate">LUVIENNA ★</div>
+      <p id="dialog-text-3"></p>
+      <div class="dialog-buttons">
+        <button id="back-btn-3" class="back-btn" style="display:none">◁ Back</button>
+        <button id="next-btn-3" class="next-btn">Next ▷</button>
+        <button id="start-btn-3" class="start-btn" style="display:none">Start ▶</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Memory Flip Game -->
+  <div id="memory-game" style="display:none; margin-top:20px; text-align:center;">
+    <p class="game-instructions">✨ Match all the pairs to unlock the file!</p>
+    <div class="memory-grid"></div>
+    <p id="memory-result" style="margin-top:15px; font-weight:bold;"></p>
+  </div>
+</section>
+
+
+    <!-- Scene 4: Skills -->
+<section class="scene" id="about-scene-4">
+  <div id="dialog-box-4" class="dialog">
+    <div class="nameplate">LUVIENNA ★</div>
+    <p id="dialog-text-4"></p>
+    <div class="dialog-buttons">
+      <button id="back-btn-4" class="back-btn">◁ Back</button>
+      <button id="next-btn-4" class="next-btn">Next ▷</button>
+      <button id="start-btn-4" class="start-btn" style="display:none">Level 2 ▶</button>
+    </div>
+  </div>
+
+
+
+      <div class="skill-groups">
+        <div class="group">
+          <h3>Personal Skills</h3>
+          <div class="skill"><span class="label">Fast Learner</span><span class="hearts" data-lvl="5"></span></div>
+          <div class="skill"><span class="label">Communication</span><span class="hearts" data-lvl="4"></span></div>
+          <div class="skill"><span class="label">Troubleshooting</span><span class="hearts" data-lvl="4"></span></div>
+          <div class="skill"><span class="label">Teamwork</span><span class="hearts" data-lvl="4"></span></div>
+        </div>
+
+        <div class="group">
+          <h3>Languages</h3>
+          <div class="skill"><span class="label">English</span><span class="hearts" data-lvl="5"></span></div>
+          <div class="skill"><span class="label">Spanish</span><span class="hearts" data-lvl="5"></span></div>
+          <div class="skill"><span class="label">Papiamentu</span><span class="hearts" data-lvl="5"></span></div>
+          <div class="skill"><span class="label">Dutch</span><span class="hearts" data-lvl="3"></span></div>
+
+        </div>
+
+        <div class="group">
+          <h3>Tech Skills</h3>
+          <div class="skill"><span class="label">HTML/CSS</span><span class="hearts" data-lvl="4"></span></div>
+          <div class="skill"><span class="label">JavaScript</span><span class="hearts" data-lvl="3"></span></div>
+          <div class="skill"><span class="label">Python</span><span class="hearts" data-lvl="4"></span></div>
+          <div class="skill"><span class="label">React</span><span class="hearts" data-lvl="4"></span></div>
+        </div>
+
+        <div class="group">
+          <h3>Hobbies</h3>
+          <div class="skill"><span class="label">Video Games</span><span class="hearts" data-lvl="4"></span></div>
+          <div class="skill"><span class="label">Puzzles</span><span class="hearts" data-lvl="5"></span></div>
+          <div class="skill"><span class="label">Crochet</span><span class="hearts" data-lvl="5"></span></div>
+          <div class="skill"><span class="label">Baking</span><span class="hearts" data-lvl="4"></span></div>
+        </div>
+      </div>
+</section>
+
+
+  <script src="javascript/about-me.js"></script>
+</body>
+</html>

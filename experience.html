@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Lu-vienna — Experience</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/main.css"/>
+  <link rel="stylesheet" href="css/experience.css"/>
+</head>
+<body class="page-experience">
+
+  <!-- HUD -->
+  <header class="hud pixel-frame">
+    <div class="hud-left">
+      <span class="brand">Lu-vienna.dev</span>
+      <div class="stats"><span class="chip">LV 02</span></div>
+    </div>
+    <nav class="hud-nav">
+      <a href="home.html">Home</a>
+      <a href="about-me.html">About</a>
+      <a href="experience.html" class="active">School & Work</a>
+      <a href="projects.html">Projects</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="section" id="xp">
+      <h2 class="level-title">Level 2 — The Journey</h2>
+
+      <!-- ===== Scene: Dialog ===== -->
+      <section id="scene-wrap">
+        <div class="char-box">
+          <img id="mainAvatar" alt="Avatar outfit" />
+        </div>
+
+        <div class="dialog">
+          <div class="nameplate">LUVIENNA ★</div>
+          <p id="dialog-text-5" aria-live="polite"></p>
+
+          <div class="dialog-buttons">
+            <button id="back-btn-5" class="back-btn">◁ Back</button>
+            <button id="next-btn-5" class="next-btn">Next ▷</button>
+            <button id="start-btn-5" class="start-btn">Let's go ▶</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== Map (hidden at start) ===== -->
+      <section id="map-section" class="hidden">
+        <div class="map-wrap pixel-frame" id="mapWrap" aria-hidden="true">
+          <svg class="map-paths" width="100%" height="100%" viewBox="0 0 1000 1000"
+               preserveAspectRatio="none" aria-hidden="true" focusable="false">
+            <path d="M157,825 C199.5,775.5 307.5,649.5 350,600" class="map-path"
+                  data-from="btn1" data-to="btn2"/>
+            <path d="M350,600 C453.4,601.1 716.6,603.9 820,605" class="map-path"
+                  data-from="btn2" data-to="btn3"/>
+            <path d="M820,605 C824.4,505.3 835.6,251.7 840,152" class="map-path"
+                  data-from="btn3" data-to="btn4"/>
+            <path d="M840,152 C768.9,182.4 588.1,259.6 517,290" class="map-path"
+                  data-from="btn4" data-to="btn5"/>
+            <path d="M517,290 C475.9,246.0 371.1,134.0 330,90" class="map-path"
+                  data-from="btn5" data-to="btn6"/>
+            <path d="M330,90 C290.4,74.6 189.6,35.4 150,20" class="map-path"
+                  data-from="btn6" data-to="btn7"/>
+          </svg>
+
+          <!-- Waypoints -->
+          <button type="button" class="map-btn locked" data-step="1"
+                  style="top:82.5%; left:15.7%;"
+                  data-title="School" data-place="St.Jozef VSBO"
+                  data-degree="Degree: Economie"
+                  data-desc="aug 2020 - jul 2022"></button>
+
+          <button type="button" class="map-btn locked" data-step="2"
+                  style="top:60%; left:35%;"
+                  data-title="Internship" data-place="Landsloterij"
+                  data-degree="Position: Office Assistant"
+                  data-desc="Mentor: 'Elvia Dantje' | nov 2021 - dec 2021"></button>
+
+          <button type="button" class="map-btn locked" data-step="3"
+                  style="top:60.5%; left:82%;"
+                  data-title="Work" data-place="Landsloterij"
+                  data-degree="Position: Office Assistant"
+                  data-desc="Holiday Job"></button>
+
+          <button type="button" class="map-btn locked" data-step="4"
+                  style="top:15.2%; left:84%;"
+                  data-title="School" data-place="Frater Aurelio SBO"
+                  data-degree="Degree: Medewerker ICT Support"
+                  data-desc="Niveau 2 | aug 2022 - jul 2024"></button>
+
+          <button type="button" class="map-btn locked" data-step="5"
+                  style="top:29%; left:51.7%;"
+                  data-title="Internship" data-place="Share Service Organisatie"
+                  data-degree="Position: IT Technician"
+                  data-desc="Mentor: Indra Lopez | mar 2024 - may 2024"></button>
+
+          <button type="button" class="map-btn locked" data-step="6"
+                  style="top:9%; left:33%;"
+                  data-title="School" data-place="Frater Aurelio SBO"
+                  data-degree="Degree: Medewerker IT Systems & Devices"
+                  data-desc="Niveau 3 | aug 2024 – heden"></button>
+
+          <button type="button" class="map-btn locked" data-step="7"
+                  style="top:2%; left:15%;"
+                  data-title="Work" data-place="Hof van Justitie"
+                  data-degree="Position: IT Technician"
+                  data-desc="Holiday Job"></button>
+        </div>
+
+        <!-- ✅ Only visible in map scene -->
+        <div class="dialog-buttons" style="margin-left: 700px; margin-top:34px; padding-bottom: 20px;">
+          <button id="next-level-btn" class="start-btn">Level 3 ▶</button>
+        </div>
+      </section>
+    </section>
+  </main>
+
+  <!-- Modal -->
+  <div id="mapModal" class="modal" aria-hidden="true">
+    <div class="modal-content">
+      <button class="close" aria-label="Close modal">&times;</button>
+      <h2 id="modalTitle">Job Title</h2>
+      <div class="modal-body">
+        <p id="modalPlace">Company / Place</p>
+        <p id="modalDegree">Degree / Role</p>
+        <p id="modalDesc">Some description of the experience...</p>
+      </div>
+    </div>
+  </div>
+
+  <div id="transition-overlay" aria-hidden="true"></div>
+
+  <script src="javascript/experience.js"></script>
+</body>
+</html>
