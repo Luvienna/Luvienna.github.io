@@ -20,7 +20,6 @@
       overflow:hidden;
     }
 
-    /* Dark overlay if you want a subtle shade, remove if not needed */
     body::before {
       content:"";
       position:absolute;
@@ -29,13 +28,11 @@
       z-index:0;
     }
 
-    /* Container for the links placed over the PC screen */
     .link-box {
       position:absolute;
-      /* Adjust these to fit the PC screen in your gif */
-      top:35%;           /* vertical position */
-      left:50%;          /* horizontal position */
-      transform:translate(-50%, -50%); /* center in that spot */
+      top:35%;       
+      left:50%;    
+      transform:translate(-50%, -50%); 
       z-index:1;
       text-align:center;
     }
@@ -48,6 +45,7 @@
       text-decoration:none;
       font-weight:600;
       transition:color 0.3s ease;
+      border: 1px solid #ff4fd0
     }
 
     .link-box a:hover {
@@ -56,12 +54,11 @@
   </style>
 </head>
 <body>
-  <!-- Links that sit “inside” the PC of the gif -->
   <div class="link-box">
     <a href="home.html">Start</a>
-    <a href="shortcut">Cheatcode</a>
   </div>
 </body>
 </html>
+
 
 
