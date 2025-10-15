@@ -26,8 +26,8 @@ const aboutDialogs = {
   ],
   scene2: [
     "You see, these files you're helping me find aren't just for coding. they're the magic I use to build and protect this world. With my trusty keyboard and mouse, I fight off the dreaded bugs that try to break everything. But beyond the myth, I'm a young and driven programmer. I'm just a 19-year-old student named Lu-Vienna St.Jago, studying at Frater Aurelio SBO in the ICT sector, and I'm eager to expand my skills and gain hands-on experience in the IT field.",
-    "I'm a self-taught programmer, guided by countless YouTube tutorials and courses. I've built several personal projects to sharpen my technical abilities, creativity, and problem-solving skills. I've tried both front-end and back-end programming, and while I enjoy the logic and functionality of the back-end, my heart truly belongs to the front-end. I am specifically in love with web development because I can see my code bloom to life into something beautiful and interactive. I'm highly motivated, curious, creative, and I'm not afraid to ask questions or tackle challenges outside my comfort zone. I am also eager to explore new technologies and roles within the field.",
-    "And that's why this file is so important. I've been given an incredible opportunity through the Koninkrijk Burst program, an initiative designed to help Caribbean students like me get internships and gain experience abroad. This file is more than just my work; it's the key to my next step into the world of technology, I can unlock new possibilities and showcase my full potential. And that's why we absolutely have to get it back!",
+    "I'm a self-taught programmer, guided by countless YouTube tutorials and courses. I've built several personal projects to sharpen my technical abilities, creativity, and problem-solving skills. I've tried both front-end and back-end programming, and while I enjoy the logic and functionality of the back-end, my heart truly belongs to the front-end because I can see my code bloom to life into something beautiful and interactive. I'm highly motivated, curious, creative, and I'm not afraid to ask questions or tackle challenges outside my comfort zone. I am also eager to explore new technologies and roles within the field.",
+    "And that's why this file is so important. This is more than just a showcase of my work; it's the key to my next step into the world of technology. This file represents the disciplined skills I've built, and it shows my full potential as I search for a development internship. I can unlock new possibilities and showcase my full potential as a professional developer.",
     "Amazing! now that you have all the info about me needed, we can go search for the next piece."
   ],
   scene3: [
@@ -233,3 +233,4 @@ if (startBtn3) {
     setTimeout(() => game.scrollIntoView({ behavior: "smooth", block: "start" }), 200);
   });
 }
+
